@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace TradeManagementClient
+namespace TradeManagementAPI
 {
     public class RouteConfig
     {
@@ -14,9 +14,9 @@ namespace TradeManagementClient
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                name: "Default",
+                name: "Default", 
                 url: "{controller}/{action}/{id}",
-                namespaces: new string[] { "TradeManagementClient.Controllers" },
+                namespaces: new string[] { "TradeManagementAPI.Controllers" },
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
         }
