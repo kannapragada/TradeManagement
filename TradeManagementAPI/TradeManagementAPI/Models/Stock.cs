@@ -1,9 +1,11 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace TradeManagementAPI
 {
     public class Stock
     {
+        [Key]
         public int StockId
         {
             get => default(int);

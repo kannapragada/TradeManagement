@@ -1,9 +1,11 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace TradeManagementAPI.Models
 {
     public class User
     {
+        [Key]
         public int UserId
         {
             get => default(int);
